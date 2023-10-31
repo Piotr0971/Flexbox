@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkslategray;
+            
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .navbar-brand .logo {
+            height: 50px;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.5s ease;
+        }
+
+        .navbar a:hover {
+            color: #459fff;
+        }
+
+        .navbar-search input {
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: none;
+        }
+        /*//////////////////////////////////////////////////////////////////*/
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .header-gallery, main, .footer-gallery {
+            width: 80%;
+            padding: 20px;
+            margin: 10px 0;
+            background-color: white;
+        }
+
+        .header-gallery h1 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .gallery img {
+            flex: 1 0 30%;
+            max-width: 30%;
+            height: auto;
+        }
+
+        .footer-gallery {
+            text-align: center;
+        }
+
+        /*//////////////////////////////////////////////////////////////////*/
+        .footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer-colums {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-title {
+            border-bottom: 2px solid red;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a, .footer-section p {
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+
+        .footer-section a:hover {
+            color: #007BFF;
+        }
+
+        .footer-socials {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .footer-socials img {
+            width: 24px;
+            height: 24px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="#">
+                    <img src="https://cdn.pixabay.com/photo/2016/12/07/15/15/lotus-with-hands-1889661_640.png" alt="" class="logo">
+                </a>
+            </div>
+            <div class="navbar-links">
+                <a href="#">Strona główna</a>
+                <a href="#">O nas</a>
+                <a href="#">Produkty</a>
+                <a href="#">Kontakt</a>
+            </div>
+            <div class="navbar-search">
+                <input type="text" placeholder="Szukaj...">
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <header class="header-gallery">
+            <h1>Galeria zdjęć</h1>
+        </header>
+        <main>
+            <div class="gallery">
+                <img src="https://cdn.pixabay.com/photo/2022/10/28/12/05/halloween-7553022_640.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2023/09/30/09/12/dachshund-8285220_640.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2023/06/01/06/01/pumpkins-8032727_640.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2019/10/23/19/52/pumpkins-4572698_640.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2023/09/24/19/13/halloween-8273648_640.jpg" alt="">
+                <img src="https://cdn.pixabay.com/photo/2022/10/27/16/28/halloween-7551188_640.jpg" alt="">
+            </div>
+        </main>
+        <footer class="footer-gallery">
+            <p>Moja galeria 2023</p>
+        </footer>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-colums">
+            <div class="footer-section">
+                <h4 class="footer-title">Company</h4>
+                <a href="#">Homepage</a>
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">TOS</a>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Help</h4>
+                <a href="#">Help</a>
+                <a href="#">Affiliates</a>
+                <a href="#">FAQ</a>
+                <a href="#">Shipping info</a>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-title">Address</h4>
+                <p>Ulica 123</p>
+                <p>00-000 Miasto</p>
+                <p>Poland</p>
+            </div>
+        </div>
+        <div class="footer-socials">
+            <a href="#">
+                <img src="https://cdn.pixabay.com/photo/2016/08/01/21/00/icon-1562136_640.png" alt="">
+            </a>
+            <a href="#">
+                <img src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_640.png" alt="">
+            </a>
+            <a href="#">
+                <img src="https://cdn.pixabay.com/photo/2016/11/19/03/08/youtube-1837872_640.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+</html>
